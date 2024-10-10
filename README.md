@@ -8,4 +8,5 @@ The app allows the user to add items they commonly purchase from the store and a
 
 ### Technology
 **Front-End:** React, Vite, Tailwind
+
 **Back-end:** Supabase BaaS
