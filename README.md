@@ -1,8 +1,11 @@
-# React + Vite
+# Grocery Unit
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a web app built with React + Vite
 
-Currently, two official plugins are available:
+## Details
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The app allows the user to add items they commonly purchase from the store and add them to their list. Furthermore, the user can add prices from specific locations and retailers with for each item,  by either the unit price, or the total price and the unit price will be calculated for them. This allows the user to be able to easily see where the cheapest location is to purchase any given item.
+
+### Technology
+**Front-End:** React, Vite, Tailwind
+**Back-end:** Supabase BaaS
