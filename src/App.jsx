@@ -19,14 +19,28 @@ export default function App() {
   const [userName, setuserName] = useState('')
 
   useEffect(()=>{
-    supabase.auth.getSession().then(({data: {session}})=>{
-      setSession(session)
-    })
-
-    supabase.auth.onAuthStateChange((_event, session) => {
-      setSession(session)
-    })
+    // console.log('setting up supabase')
+    supabaseSetup()
   }, [])
+
+  async function supabaseSetup() {
+    const { data, error } = await supabase
+      .auth
+      .getSession()
+    if (error) {
+      // console.log('error getting session')
+      console.error(error)
+    } else {
+      setSession(data?.session)
+      // console.log('session: ', data.session)
+    }
+    // console.log('got session')
+    supabase
+      .auth
+      .onAuthStateChange((event, session) => {
+        setSession(session)
+      })
+  }
 
   return(
     <div>
