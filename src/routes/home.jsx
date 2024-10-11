@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import {supabase} from '../../utils/supabase'
 import NewItem from '../components/NewItem'
 import Item from '../components/Item'
+import getItems from '../components/Items'
 
 // export async function getItems(session) {
 
@@ -18,7 +19,8 @@ export default function Home({session, items}) {
 
     useEffect(()=>{
         setLoading(true)
-        // getItems();
+        
+        getItems();
         getName();
         setLoading(false)
         console.log(items)

@@ -54,7 +54,7 @@ const ItemView = () => {
                     New Price
                 </button>
             </div>
-        {popupVisible ? <div className='fixed top-0 left-0 mx-[10vw] mt-10'>
+        {popupVisible ? <div className='fixed top-0 left-0 mx-[10vw] mt-0'>
             <div className="bg-white p-6 rounded border-black border-[1px] shadow-xl w-[80vw]">
                 <h2 className="text-xl font-bold mb-4">Add New Price</h2>
                 <form onSubmit={async (e) => {
