@@ -10,3 +10,21 @@ The app allows the user to add items they commonly purchase from the store and a
 **Front-End:** React, Vite, Tailwind
 
 **Back-end:** Supabase BaaS
+
+### Demo
+
+Login Screen:
+
+![login](./src/assets/login_page.png)
+
+Home Screen:
+
+![home](./src/assets/home_page.png)
+
+Product Screen:
+
+![product](./src/assets/product_page.png)
+
+Price Edit Screen:
+
+![edit](./src/assets/product_edit.png)
